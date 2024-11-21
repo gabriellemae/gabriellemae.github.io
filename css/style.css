@@ -1,0 +1,12 @@
+@font-face{
+	font-family: 'Retelling';
+	src: url('Retelling.otf') format("opentype");
+	font-weight: 400;
+}
+
+body{
+	/* this is the outermost element on your page*/
+	background: yellow;
+	font-family: 'Retelling';
+	font-size: 100px;
+}
