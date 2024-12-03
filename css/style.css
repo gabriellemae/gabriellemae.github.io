@@ -9,4 +9,9 @@ body{
 	background: yellow;
 	font-family: 'Retelling';
 	font-size: 100px;
+	
+}
+p {
+  font-size: 18px;
+  color: blue;
 }

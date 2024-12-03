@@ -6,8 +6,16 @@
 
 body{
 	/* this is the outermost element on your page*/
-	background: yellow;
+	background: white;
 	font-family: 'Retelling';
-	font-size: 100px;
+	font-size: 15px;
+
 }
 
+h1{
+	font-size: 200px;
+}
+
+h4{
+	font-size: 30px;
+}
