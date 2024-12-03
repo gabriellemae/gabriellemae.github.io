@@ -6,16 +6,32 @@
 
 body{
 	/* this is the outermost element on your page*/
-	background: white;
+	background: black;
 	font-family: 'Retelling';
 	font-size: 15px;
 
 }
 
 h1{
+	color: white;
 	font-size: 200px;
+	text-align: left;
 }
 
 h4{
+	color: white;
 	font-size: 25px;
 }
+
+p{
+	color: white;
+	font-size: 15px;
+	text-align: left;
+	letter-spacing: 0.01em;
+}
+
+#main {
+  width: 1750px;
+  margin: 0 auto; 
+}
+
