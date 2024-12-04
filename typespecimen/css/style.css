@@ -12,6 +12,7 @@ body{
 
 }
 
+
 h1{
 	color: white;
 	font-size: 10vw; /* viewport width makes responsive*/
@@ -23,6 +24,27 @@ h1{
 h4{
 	color: white;
 	font-size: 1vw;
+}
+
+img {
+  float: right;
+  margin: 0 0 1em 1em;
+     width: 200px; /* Set the width to 300px */
+     height: auto;
+}
+
+h2{
+  color:white;
+  font-size: 1vw;
+  text-align:center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h5{
+   color:white;
+  font-size: 4vw;
+  text-align:center;
 }
 
 
@@ -72,3 +94,4 @@ p{
   width: 100%; /* Ensure it takes up the full width of the page */
 
 }
+
