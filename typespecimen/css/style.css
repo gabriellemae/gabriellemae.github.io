@@ -16,7 +16,8 @@ h1{
 	color: white;
 	font-size: 175px;
 	text-align: left;
-
+	line-height: 20px; /* decrease space around */
+  height: 20px;/* decrease space around */
 }
 
 h4{
@@ -31,7 +32,7 @@ p{
 	text-align: left;
 	letter-spacing: 0.01em;
 	line-height:19px;
-	 text-indent:19px;
+	text-indent:19px;
 }
 
 .split-container {
@@ -65,9 +66,9 @@ p{
   box-sizing: border-box;
 }
 
-
 .bottom {
-  display: flex; /* Enable Flexbox */
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: flex-end; /* Push the content to the bottom */
-  height: 100%;
+  position: absolute;
+  bottom: 0; /* Align the text to the bottom of the page */
+  width: 100%; /* Ensure it takes up the full width of the page */
+
+}
