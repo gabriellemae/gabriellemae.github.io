@@ -65,3 +65,9 @@ p{
   box-sizing: border-box;
 }
 
+
+.bottom {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-end; /* Push the content to the bottom */
+  height: 100%;
