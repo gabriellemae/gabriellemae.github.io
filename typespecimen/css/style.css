@@ -26,19 +26,25 @@ h4{
 	font-size: 1vw;
 }
 
-img {
-  float: right;
-  margin: 0 0 1em 1em;
-     width: 200px; /* Set the width to 300px */
-     height: auto;
-}
 
+}
 h2{
   color:white;
   font-size: 1vw;
   text-align:center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+#brush{
+  float:right;
+  height:200px;
+  padding-left: 10px;
+}
+
+#scissors{
+   float:left;
+  height:200px;
 }
 
 h5{
