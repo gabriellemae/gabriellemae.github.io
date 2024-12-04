@@ -14,8 +14,9 @@ body{
 
 h1{
 	color: white;
-	font-size: 200px;
+	font-size: 175px;
 	text-align: left;
+
 }
 
 h4{
@@ -23,15 +24,44 @@ h4{
 	font-size: 25px;
 }
 
+
 p{
 	color: white;
 	font-size: 15px;
 	text-align: left;
 	letter-spacing: 0.01em;
+	line-height:19px;
+	 text-indent:19px;
 }
 
-#main {
-  width: 1750px;
-  margin: 0 auto; 
+.split-container {
+  display: flex;
+  height: 100vh; /* Full height */
+  width: 100%;
+  padding: 10px;
+  overflow: hidden; /* Prevent outer scrolling */
+}
+
+.left-pane{
+  flex: 1; /* Take equal width */
+  overflow-y: auto; /* Allow scrolling vertically */
+  height: 100vh; /* Ensure full height */
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+.right-pane {
+  flex: 1; /* Take equal width */
+  overflow-y: auto; /* Allow scrolling vertically */
+  height: 100vh; /* Ensure full height */
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
