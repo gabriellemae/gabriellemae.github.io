@@ -1,11 +1,14 @@
 body{
-	margin:;
+	margin:0;
+	font-family: sans-serif;
 }
 main{
 	display: grid;
 	height: 100vh;
 	grid-template-columns: repeat(4, 1fr);
+	gap:0;
 }
+
 
 .text-column{
 	grid-column:1/2;
@@ -19,33 +22,32 @@ main{
 
 .squares-column{
 	grid-column:3/4;
+	grid-row:;
 }
 
 .square1{
 	grid-column: 3/4;
-	height: 200px;
-	width: 200px;
+	height: 400px;
+	width: 400px;
 	background: blue;
 }
 
 .square2{
 	grid-column: 3/4;
-	height: 200px;
-	width: 200px;
+	height: 400px;
+	width: 400px;
 	background: yellow;
 }
 
 .square3{
 	grid-column: 3/4;
-	height: 200px;
-	width: 200px;
+	height: 400px;
+	width: 400px;
 	background: red;
 }
 
 .rectangle{
-	grid-column:1/4;
-	height: 200px;
-	width: 200px;
-	color: darkred;
-
+	grid-column:4/4;
+	background: black;
+	font-color:white;
 }
