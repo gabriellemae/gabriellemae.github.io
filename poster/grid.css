@@ -1,0 +1,51 @@
+body{
+	margin:;
+}
+main{
+	display: grid;
+	height: 100vh;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.text-column{
+	grid-column:1/2;
+	padding-top:50vh;
+	padding-left:20px;
+}
+
+.text-column{
+	font-size: 50px;
+}
+
+.squares-column{
+	grid-column:3/4;
+}
+
+.square1{
+	grid-column: 3/4;
+	height: 200px;
+	width: 200px;
+	background: blue;
+}
+
+.square2{
+	grid-column: 3/4;
+	height: 200px;
+	width: 200px;
+	background: yellow;
+}
+
+.square3{
+	grid-column: 3/4;
+	height: 200px;
+	width: 200px;
+	background: red;
+}
+
+.rectangle{
+	grid-column:1/4;
+	height: 200px;
+	width: 200px;
+	color: darkred;
+
+}
