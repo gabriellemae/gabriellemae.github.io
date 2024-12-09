@@ -12,9 +12,3 @@ splitter.addEventListener('mousedown', (e) => {
   });
 });
 
-function handleMouseMove(e) {
-  if (isResizing) {
-    const leftPanelWidth = e.clientX; // Get the current X position
-    leftPanel.style.width = leftPanelWidth + 'px';
-  }
-}
