@@ -14,6 +14,22 @@ body, html{
   margin: 0;
 }
 
+.glyph{
+  font-size: 100px;
+  line-height: 5px;
+}
+ .box {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width:300px;
+    height:500px;
+    font-size: 17px;
+   /* overflow: auto;*/
+ }
 
 
 
@@ -88,12 +104,6 @@ p{
   line-height:26px;
 }
 
-.vertical-line{
-  width: 1 px;
-  heiht: 500px;
-  color: white;
-}
-
 .container {
   padding: 10px;
   background: linear-gradient(0deg, rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );;
@@ -142,13 +152,24 @@ p{
 }
 
 @media (max-width: 768px) {
+
  .container {
     flex-direction: column; /* Stack the panels vertically */
     height: auto;
   }*/
 
-  .left-panel, .right-panel {
+  /*.left-panel, .right-panel {
     width: 100%;
+  }*/
+
+  .left-panel{
+    width: 100%;
+    postion: absolute;
+  }
+
+  .right-panel {
+    width: 100%;
+    margin:0%;
   }
 
   .splitter {

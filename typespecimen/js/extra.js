@@ -12,3 +12,4 @@ splitter.addEventListener('mousedown', (e) => {
   });
 });
 
+
