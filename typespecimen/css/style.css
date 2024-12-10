@@ -1,32 +1,34 @@
 @font-face{
-	font-family: 'Retelling';
-	src: url('Retelling.otf') format("opentype");
-	font-weight: 400;
+  font-family: 'Retelling';
+  src: url('Retelling.otf') format("opentype");
+  font-weight: 400;
 }
 
 
 body, html{
-	/* this is the outermost element on your page*/
-	background:black;
-	font-family: 'Retelling';
-	font-size: 15px;
+  /* this is the outermost element on your page*/
+  background:black;
+  font-family: 'Retelling';
+  font-size: 15px;
   height:100%;
+  margin: 0;
+  /* background: linear-gradient(220deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 }
 
 
 
 
 h1{
-	color: white;
-	font-size: 10vw; /* viewport width makes responsive*/
-	text-align: left;
-	line-height: 20px; /* decrease space around */
+  color: white;
+  font-size: 10vw; /* viewport width makes responsive*/
+  text-align: left;
+  line-height: 20px; /* decrease space around */
   height: 20px;/* decrease space around */
 }
 
 h4{
-	color: white;
-	font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 h2{
@@ -57,8 +59,15 @@ h2{
 #t{
    float:left;
   height:100px;
-  padding-right: 15px;
+  padding-right: 7px;
+  padding-top:10px;
 }
+
+#o{
+  float:left;
+  height:100px;
+  padding-right: 7px;
+  padding-top:10px;}
 
 h5{
    color:white;
@@ -68,11 +77,11 @@ h5{
 
 
 p{
-	color: white;
-	font-size: 20px;
-	text-align: left;
-	letter-spacing: 0.01em;
-	line-height:26px;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 0.01em;
+  line-height:26px;
 }
 
 .vertical-line{
@@ -82,16 +91,13 @@ p{
 }
 
 .container {
-  display: flex;
-  height: 100vh; /* Full height */
-  width: 100%;
   padding: 10px;
-  overflow: hidden; /* Prevent outer scrolling */
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,71,105,10) 93%);
 }
 
 .left-panel {
   flex: 1; /* Take equal width */
- /* overflow: auto; /* Allow scrolling vertically */
+  /* overflow: auto; /* Allow scrolling vertically */
   height: 100vh; /* Ensure full height */
   padding-top: 20px;
   padding-right: 30px;
@@ -99,28 +105,30 @@ p{
   padding-left: 20px;
   box-sizing: border-box;
   transition: width 0.2s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50vw;
 }
 
 
 .right-panel {
   flex: 1; /* Take equal width */
   overflow: auto; /* Allow scrolling vertically */
-  height: 100vh; /* Ensure full height */
+  /* height: 100vh; */ /* Ensure full height */
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   box-sizing: border-box;
   transition: width 0.2s;
-  /*background: rgb 2,0,36;
-  background: linear-gradientm90deg, rgba 2,0,36,1  0%, rgba 255,255,255,1 00000000%, rgba 9,9,121,1  38%, rgba 0,0,0,1  99%;*/
+  margin-left: 50%;
 }
 
 .bottom {
   position: absolute;
   bottom: 0; /* Align the text to the bottom of the page */
   width: 100%; /* Ensure it takes up the full width of the page */
-
 }
 
 .splitter { /* for split screen*/
@@ -130,9 +138,10 @@ p{
 }
 
 @media (max-width: 768px) {
-  .container {
+ .container {
     flex-direction: column; /* Stack the panels vertically */
-  }
+    height: auto;
+  }*/
 
   .left-panel, .right-panel {
     width: 100%;
@@ -141,14 +150,15 @@ p{
   .splitter {
     display: none; /* Hide the splitter on small screens */
   }
+
 .bottom {
-  position: absolute;
-  bottom: 50vh; /* makes not at bottom of page*/
-  width: 100%; /* Ensure it takes up the full width of the page */
+  position: static;
+  /* bottom: 0; */ /* makes not at bottom of page*/
+  /* width: 100%; */ /* Ensure it takes up the full width of the page */
+  margin-top: 400px;
+}
+h1{
+  font-size: 60px; 
 }
 
 }
-
-
-
-
