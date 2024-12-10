@@ -42,18 +42,23 @@ h2{
 #brush2{
   float:right;
   height:250px;
-  padding-left: 30px;
+  padding-left: 15px;
+  mix-blend-mode: screen;
+}
+
+
+#scissors{
+   float:left;
+  height:250px;
+   padding-right: 15px;
+  mix-blend-mode: screen;
 }
 
 #crown{
   float:right;
   height:100px;
-  padding-left: 30px;
-}
-
-#scissors{
-   float:left;
-  height:250px;
+  padding-left: 15px;
+  mix-blend-mode: screen;
 }
 
 #t{
