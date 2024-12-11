@@ -79,7 +79,7 @@ h2{
 #t{
    float:left;
   height:100px;
-  padding-right: 7px;
+  padding-right: 10px;
   padding-top:10px;
 }
 
@@ -102,11 +102,12 @@ p{
   text-align: left;
   letter-spacing: 0.01em;
   line-height:26px;
+  
 }
 
 .container {
   padding: 10px;
-  background: linear-gradient(0deg, rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );;
+  /*background: linear-gradient(0deg, rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );*/
 }
 
 .left-panel {
@@ -139,6 +140,7 @@ p{
   margin-left: 50%;
 }
 
+
 .bottom {
   position: absolute;
   bottom: 0; /* Align the text to the bottom of the page */
@@ -164,12 +166,13 @@ p{
 
   .left-panel{
     width: 100%;
-    postion: absolute;
+    position: absolute;
   }
 
   .right-panel {
     width: 100%;
     margin:0%;
+    margin-top:500px;
   }
 
   .splitter {

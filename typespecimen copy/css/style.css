@@ -1,67 +1,95 @@
-@font-face{
-	font-family: 'Retelling';
-	src: url('Retelling.otf') format("opentype");
-	font-weight: 400;
+
+@font-face {
+    font-family: 'Retelling';
+    src: url('Retelling.otf') format("opentype");
+    font-weight: 400;
 }
 
-body{
-	/* this is the outermost element on your page*/
-	background: black;
-	font-family: 'Retelling';
-	font-size: 15px;
-
+body, html {
+    background: black;
+    font-family: 'Retelling';
+    font-size: 15px;
+    height: 100%;
+    margin: 0;
+    transition: background-color 0.3s ease;
 }
 
-h1{
-	color: white;
-	font-size: 175px;
-	text-align: left;
+/* Rest of your existing CSS */
+.glyph { font-size: 100px; line-height: 5px; }
 
+.box {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    padding: 2rem 2rem 4rem 2rem;
+    width: 300px;
+    height: 500px;
+    font-size: 17px;
 }
 
-h4{
-	color: white;
-	font-size: 25px;
+/* Your other existing styles remain the same */
+.container {
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2%);
+    transition: background 0.3s ease;
 }
 
-
-p{
-	color: white;
-	font-size: 15px;
-	text-align: left;
-	letter-spacing: 0.01em;
-	line-height:19px;
-	 text-indent:19px;
+.left-panel {
+    flex: 1;
+    height: 100vh;
+    padding: 20px 30px 20px 20px;
+    box-sizing: border-box;
+    transition: width 0.2s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50vw;
 }
 
-.split-container {
-  display: flex;
-  height: 100vh; /* Full height */
-  width: 100%;
-  padding: 10px;
-  overflow: hidden; /* Prevent outer scrolling */
+.right-panel {
+    flex: 1;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: width 0.2s, color 0.3s ease;
+    margin-left: 50%;
 }
 
-.left-pane{
-  flex: 1; /* Take equal width */
-  overflow-y: auto; /* Allow scrolling vertically */
-  height: 100vh; /* Ensure full height */
-  padding-top: 20px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  box-sizing: border-box;
+/* Add new styles for the scroll effect */
+.right-panel p, .right-panel h2 {
+    transition: color 0.3s ease;
 }
 
+/* Rest of your existing styles... */
+</style>
+</head>
 
-.right-pane {
-  flex: 1; /* Take equal width */
-  overflow-y: auto; /* Allow scrolling vertically */
-  height: 100vh; /* Ensure full height */
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  box-sizing: border-box;
-}
+<body>
+<!-- Your existing HTML content -->
+<div class="container">
+    <!-- Left panel and right panel content as in your original HTML -->
+</div>
 
+<script>
+window.addEventListener('scroll', () => {
+    const rightPanel = document.querySelector('.right-panel');
+    const container = document.querySelector('.container');
+    const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    
+    // Calculate the RGB value (0-255)
+    const rgbValue = Math.min(255, Math.floor(scrollPercent * 2.55));
+    
+    // Update container background
+    container.style.background = `rgb(${rgbValue}, ${rgbValue}, ${rgbValue})`;
+    
+    // Change text color based on background brightness
+    const textColor = rgbValue > 128 ? 'black' : 'white';
+    const paragraphs = rightPanel.querySelectorAll('p');
+    const headers = rightPanel.querySelectorAll('h2');
+    
+    paragraphs.forEach(p => p.style.color = textColor);
+    headers.forEach(h => h.style.color = textColor);
+});
+</script>
+</body>
+</html>
