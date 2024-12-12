@@ -9,19 +9,51 @@ body{
 	background: ghostwhite;
 	font-family: 'Retelling';
 	font-size: 60px;
+	text-align: center;
+	padding: 50px;
 	
 }
 p {
   font-size: 18px;
   color: black;
   line-height: 18px;
+  text-align: center;
 }
 
 a{
 	color:deeppink;
 }
 
+h3{
+	font-size: 5px;
+  color: black;
+  line-height: 18px;
+
+}
+
 #main {
   width: 1600px;
   margin: 0 auto; 
+}
+
+
+.typespecimen{
+    background: black;
+    color: white;
+    --grad: -100;
+}
+
+
+#button{
+    margin-top: 18px;
+    border: 1px solid;
+    padding: 10px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size:18px;
+}
+
+#button:hover{
+    background: black;
+    cursor: pointer;
 }
