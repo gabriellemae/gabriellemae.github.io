@@ -4,6 +4,9 @@
 	font-weight: 400;
 }
 
+.textchange: hover{
+    transition: transform .03s ease;
+}
 
 body{
 	/* this is the outermost element on your page*/
@@ -12,6 +15,7 @@ body{
 	font-size: 60px;
 	text-align: center;
 	padding: 50px;
+
 	
 }
 p {
@@ -43,6 +47,7 @@ h3{
     color: white;
     --grad: -100;
 }
+
 
 
 #button{
