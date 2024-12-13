@@ -1,17 +1,4 @@
 
-const splitter = document.getElementById('splitter');
-const leftPanel = document.querySelector('.left-panel');
-let isResizing = false;
-
-splitter.addEventListener('mousedown', (e) => {
-  isResizing = true;
-  document.addEventListener('mousemove', handleMouseMove);
-  document.addEventListener('mouseup', () => {
-    isResizing = false;
-    document.removeEventListener('mousemove', handleMouseMove);
-  });
-});
-
 console.log('Hello');
 
 //set up the element that triggers my function
@@ -25,4 +12,18 @@ glyph.addEventListener('click', function(){
 
   box.classList.toggle('bookmark');
 });
+
+const splitter = document.getElementById('splitter');
+const leftPanel = document.querySelector('.left-panel');
+let isResizing = false;
+
+splitter.addEventListener('mousedown', (e) => {
+  isResizing = true;
+  document.addEventListener('mousemove', handleMouseMove);
+  document.addEventListener('mouseup', () => {
+    isResizing = false;
+    document.removeEventListener('mousemove', handleMouseMove);
+  });
+});
+
 
