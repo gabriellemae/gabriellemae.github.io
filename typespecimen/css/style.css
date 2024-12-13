@@ -194,10 +194,13 @@ p{
      font-size: 20vw;
   }
 
+
  .container {
     flex-direction: column; /* Stack the panels vertically */
     height: auto;
   }
+
+
 
   /*.left-panel, .right-panel {
     width: 100%;
@@ -226,7 +229,7 @@ p{
     position: static;
     /* bottom: 0; */ /* makes not at bottom of page*/
     /* width: 100%; */ /* Ensure it takes up the full width of the page */
-    margin-top: 400px;
+    margin-top: 500px;
   }
 
 }
