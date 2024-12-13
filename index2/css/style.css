@@ -8,20 +8,9 @@ a, u {
   text-decoration: none;
 }
 
-#draggable-circle {
-    width: 200px;
-    height: 200px;
-    background-color: deeppink;
-    border-radius: 50%;
-    position: absolute;
-    cursor: pointer;
-    user-select: none; /* Prevent text selection */
-    mix-blend-mode: multiply;
-}
-
 body{
 	/* this is the outermost element on your page*/
-	background: white;
+	background: ghostwhite;
 	font-family: 'Retelling';
 	font-size: 80px;
 	text-align: center;
@@ -32,7 +21,7 @@ body{
 p {
   font-size: 25px;
   color: black;
-  line-height: 30px;
+  line-height: 60px;
   text-align: center;
 }
 
@@ -40,7 +29,13 @@ a{
 	color:deeppink;
 }
 
-h3{
+h1 {
+
+font-size: 50px;
+  color: black;
+  line-height: 18px;
+}
+h2{
 	font-size: 5px;
   color: black;
   line-height: 18px;
