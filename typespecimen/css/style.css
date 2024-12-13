@@ -74,7 +74,7 @@ h4{
   color: white;
   font-size: 20px;
   margin-top: -15px;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 h2{
@@ -83,6 +83,7 @@ h2{
   text-align:center;
   padding-top: 10px;
   padding-bottom: 10px; /*line was 5*/
+  font-weight: 400;
 }
 
 #brush{
@@ -124,6 +125,7 @@ h5{
    color:white;
   font-size: 4vw;
   text-align:center;
+  font-weight: 400;
 }
 
 
