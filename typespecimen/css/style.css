@@ -184,7 +184,7 @@ p{
 @media (max-width: 768px) {
 
   h1{
-    font-size: 110px; 
+     font-size: 20vw;
   }
 
  .container {
