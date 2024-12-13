@@ -137,10 +137,21 @@ p{
   /*background: linear-gradient(0deg, rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );*/
 }
 
-    .left-panel {
-        position: static;
-        height: auto;
-    }
+
+.left-panel {
+  flex: 1; /* Take equal width */
+  /* overflow: auto; /* Allow scrolling vertically */
+  height: 100vh; /* Ensure full height */
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  transition: width 0.2s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50vw;
 }
 
 
@@ -170,7 +181,12 @@ p{
   user-select: none;
 }
 
+
 @media (max-width: 768px) {
+
+  h1{
+    font-size: 80px; 
+  }
 
  .container {
     flex-direction: column; /* Stack the panels vertically */
@@ -190,24 +206,18 @@ p{
   .right-panel {
     width: 100%;
     margin:0%;
-    margin-top:10px;
+    margin-top:20px;
   }
 
   .splitter {
     display: none; /* Hide the splitter on small screens */
   }
 
-
-}
-.bottom {
-  position: static;
-  /* bottom: 0; */ /* makes not at bottom of page*/
-  /* width: 100%; */ /* Ensure it takes up the full width of the page */
-  margin-top: 400px;
-}
-
-h1{
-  font-size: 60px; 
-}
+  .bottom {
+    position: static;
+    /* bottom: 0; */ /* makes not at bottom of page*/
+    /* width: 100%; */ /* Ensure it takes up the full width of the page */
+    margin-top: 400px;
+  }
 
 }
