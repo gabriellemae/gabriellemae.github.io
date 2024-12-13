@@ -14,7 +14,7 @@ body, html{
   margin: 0;
 }
 
-.glyph{
+.glyph {
   font-size: 100px;
   line-height: 5px;
 }
@@ -71,6 +71,7 @@ h1{
 h4{
   color: white;
   font-size: 20px;
+  margin-top: -15px;
 }
 
 h2{
@@ -183,7 +184,7 @@ p{
 @media (max-width: 768px) {
 
   h1{
-    font-size: 80px; 
+    font-size: 110px; 
   }
 
  .container {
