@@ -4,10 +4,6 @@
 	font-weight: 400;
 }
 
-.textchange: hover{
-    transition: transform .03s ease;
-}
-
 body{
 	/* this is the outermost element on your page*/
 	background: ghostwhite;

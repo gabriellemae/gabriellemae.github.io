@@ -21,21 +21,42 @@ body, html{
  .box {
     position: absolute;
     top: 0;
-    background-color: white;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 4rem;
     padding-bottom: 4.5rem;
-    width:300px;
-    height:500px;
+    width:400px;
+/*    height:500px;*/
     font-size: 17px;
    /* overflow: auto;*/
  }
 
-
-.caption{
+.box p{
   color: black;
   font-size: 10px;
+}
+
+.glyph{
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  height: 50px;
+  text-align: center;
+  padding-top: 2rem;
+}
+.caption{
+  background-color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  transition: 400ms ease-in-out;
+  transform: translateY(-110%);
+  height: 300px;
+  overflow: scroll;
+}
+
+.bookmark .caption{
+  transform: translateY(0);
 }
 
 h1{
@@ -116,20 +137,10 @@ p{
   /*background: linear-gradient(0deg, rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );*/
 }
 
-.left-panel {
-  flex: 1; /* Take equal width */
-  /* overflow: auto; /* Allow scrolling vertically */
-  height: 100vh; /* Ensure full height */
-  padding-top: 20px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  box-sizing: border-box;
-  transition: width 0.2s;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 50vw;
+    .left-panel {
+        position: static;
+        height: auto;
+    }
 }
 
 
@@ -170,6 +181,7 @@ p{
     width: 100%;
   }*/
 
+
   .left-panel{
     width: 100%;
     position: absolute;
@@ -178,19 +190,22 @@ p{
   .right-panel {
     width: 100%;
     margin:0%;
-    margin-top:500px;
+    margin-top:10px;
   }
 
   .splitter {
     display: none; /* Hide the splitter on small screens */
   }
 
+
+}
 .bottom {
   position: static;
   /* bottom: 0; */ /* makes not at bottom of page*/
   /* width: 100%; */ /* Ensure it takes up the full width of the page */
   margin-top: 400px;
 }
+
 h1{
   font-size: 60px; 
 }
