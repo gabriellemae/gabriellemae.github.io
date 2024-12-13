@@ -81,7 +81,7 @@ h2{
   color:white;
   font-size: 30px;
   text-align:center;
-  padding-top: 10px;
+  padding-top: 35px;
   padding-bottom: 10px; /*line was 5*/
   font-weight: 400;
 }
@@ -139,6 +139,7 @@ p{
   font-weight: 400;
   
 }
+
 
 .container {
   padding: 10px;
@@ -198,14 +199,6 @@ p{
     font-size: 20px;
     margin-top: -10px;
   }
-
-h2{
-  font-size: 28px;
-  text-align:center;
-  padding-top: 2px;
-  padding-bottom: 2px; /*line was 5*/
-  font-weight: 400;
-}
 
 
  .container {
