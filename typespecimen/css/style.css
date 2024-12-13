@@ -136,8 +136,6 @@ p{
   padding: 10px;
   /*background: linear-gradient(0deg, rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );*/
 }
-
-
 .left-panel {
   flex: 1; /* Take equal width */
   /* overflow: auto; /* Allow scrolling vertically */
@@ -191,7 +189,7 @@ p{
  .container {
     flex-direction: column; /* Stack the panels vertically */
     height: auto;
-  }*/
+  }
 
   /*.left-panel, .right-panel {
     width: 100%;
@@ -200,7 +198,8 @@ p{
 
   .left-panel{
     width: 100%;
-    position: absolute;
+    position: static;
+    height:auto;
   }
 
   .right-panel {
@@ -212,7 +211,6 @@ p{
   .splitter {
     display: none; /* Hide the splitter on small screens */
   }
-
   .bottom {
     position: static;
     /* bottom: 0; */ /* makes not at bottom of page*/
