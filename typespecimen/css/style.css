@@ -191,6 +191,14 @@ p{
 
 @media (max-width: 768px) {
 
+  .h2rep h2{
+    padding-top: 0px;/*this allows for the adjustmemt of margin-top*/
+  }
+
+  .h2rep{
+    margin-top: -40px;
+  }
+
   h1{
      font-size: 20vw;
   }
@@ -209,6 +217,11 @@ p{
   /*.left-panel, .right-panel {
     width: 100%;
   }*/
+
+  .box{
+    left:50%;
+    transform: translateX(-50%);
+  }
 
   .left-panel{
     width: 100%;
