@@ -1,7 +1,19 @@
-@font-face{
+/*@font-face{
 	font-family: 'Retelling';
 src: url('Retelling.otf') format("opentype");
 	font-weight: 400;
+}*/
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 a, u {
@@ -22,7 +34,7 @@ a, u {
 body{
 	/* this is the outermost element on your page*/
 	background: white;
-	font-family: 'Retelling';
+	font-family: "Open Sans", serif;
 	font-size: 80px;
 	text-align: center;
 	padding: 50px;
