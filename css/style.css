@@ -16,9 +16,45 @@ src: url('Retelling.otf') format("opentype");
     "wdth" 100;
 }
 
-a, u {
-  text-decoration: none;
+
+.darkmode{
+    background: deeppink;
+    color: white;
+    --grad: -100;
 }
+
+.darkmode h1 {
+    color: white;
+}
+
+.darkmode a {
+    color: black;
+}
+
+
+
+#button{
+    margin-top: 0px;
+    border: 1px solid;
+    padding: 10px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 12px;
+    position:absolute;
+    top: 10px;
+    right:20px;
+}
+
+#button:hover{
+    background: green;
+    cursor: pointer;
+}
+
+
+
+/*a, u {
+  text-decoration: none;
+}*/
 
 #draggable-circle {
     width: 200px;
@@ -28,16 +64,24 @@ a, u {
     position: absolute;
     cursor: pointer;
     user-select: none; /* Prevent text selection */
-    mix-blend-mode: multiply;
+    mix-blend-mode: difference;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
 }
 
 body{
 	/* this is the outermost element on your page*/
-	background: white;
+	background: whitesmoke;
 	font-family: "Open Sans", serif;
 	font-size: 80px;
 	text-align: center;
 	padding: 50px;
+    
 
 	
 }
@@ -72,17 +116,3 @@ h3{
 }
 
 
-
-#button{
-    margin-top: 0px;
-    border: 1px solid;
-    padding: 10px;
-    display: inline-block;
-    text-transform: capitalize;
-    font-size: 25px;
-}
-
-#button:hover{
-    background: black;
-    cursor: pointer;
-}
