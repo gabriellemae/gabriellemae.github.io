@@ -19,7 +19,7 @@ src: url('Retelling.otf') format("opentype");
 
 .darkmode{
     background: deeppink;
-    color: white;
+    color: whitesmoke;
     --grad: -100;
 }
 
